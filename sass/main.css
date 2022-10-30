@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-image: url(../img/back.jpg);
+}
+
+h2 {
+  background-color: black;
+  color: white;
+  width: 80%;
+  position: relative;
+  left: 10%;
+  right: 10%;
+  margin: 0;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.gal {
+  background-color: black;
+  width: 80%;
+  height: auto;
+  margin: 0;
+  opacity: 90%;
+  position: relative;
+  left: 10%;
+  right: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gal .foto {
+  margin: 20px;
+  padding: 20px;
+}
+.gal .foto img {
+  height: 300px;
+  width: auto;
+}
+
+#footer {
+  background-color: black;
+  height: auto;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin: 0;
+}
+#footer ul {
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+#footer ul li {
+  margin: 10px;
+}
+#footer ul li a {
+  color: black;
+  text-decoration: none;
+  margin: 5px;
+  padding: 5px;
+  background-color: white;
+  border-radius: 10px;
+  transition: all 1s;
+}
+#footer ul li a:hover {
+  background-color: aquamarine;
+  color: black;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+@media (max-width: 1000px) {
+  .gal {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+}
+@media (max-width: 650px) {
+  .gal {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+  }
+  .gal .foto img {
+    width: 80%;
+    height: auto;
+  }
+}/*# sourceMappingURL=main.css.map */
